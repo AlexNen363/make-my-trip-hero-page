@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ff5a5f;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://www.gyftr.com/_next/image?url=https%3A%2F%2Fcdn2.gyftr.com%2Fgyftrweb%2Fbrands%2F615.png&w=384&q=75');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.search-form input {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.special-fares {
+    margin-top: 20px;
+}
+
+.fare-category {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+@media (min-width: 768px) {
+    .search-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search-form input {
+        margin: 0 5px;
+        flex: 1;
+    }
+
+    .search-form button {
+        margin-left: 5px;
+    }
+}
